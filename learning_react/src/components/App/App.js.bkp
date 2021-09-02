@@ -1,0 +1,40 @@
+import React from "react";
+
+/**
+ * Components/elements can be created in more than one way, as seen bellow.
+ * First method is by creating a class;
+ */
+// class Learning extends React.Component {
+//     render() {
+//         return <h1>My first React project.</h1>
+//     }
+// }
+
+/**
+ * The second method is by creating a function;
+ */
+// function App() {
+//     return <h1>Element created by class()</h1>;
+// }
+
+/**
+ * You can also create a component using a variable which can be
+ * done in two distinct ways, both of them are used less tha others;
+ */
+// let App = () => {
+//     return <h1>This is an element created by a variable.</h1>
+// }
+// let App = () => <h1>This is an element created by a variable 2.</h1>
+
+function Learning() {
+    return <>
+        <FooBar />
+        <FooBar />
+        <FooBar />
+    </>
+}
+function FooBar() {
+    return <h1>Welcome stranger</h1>;
+}
+
+export default Learning;

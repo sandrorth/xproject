@@ -1,0 +1,11 @@
+.instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.instructions img {
+    width: 100px;
+    height: 100px;
+}

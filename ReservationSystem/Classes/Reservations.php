@@ -36,7 +36,7 @@ class Reservations
         return false;
     }
 
-    public function scheduleReservation($userId, $vehicleId, $startDate, $startTime, $endDate, $endTime)
+    public function scheduleReservation($userId, $vehicleId, $startDate, $startTime, $endDate, $endTime): bool
     {
         $dateTime = Database::createDateTimeWithTimezone($startDate, $startTime, 'America/Sao_paulo');
         $startDateTime = $dateTime->format('Y-m-d H:i:sP');
